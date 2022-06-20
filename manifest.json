@@ -1,7 +1,7 @@
 {
     "name": "Garmin Connect Web Missing LoadFocus Fixer",
     "description": "This Chrome extension fixes missing LoadFocus feature on Garmin Connect Web by modifying XHR response.",
-    "version": "1.0",
+    "version": "1.1",
     "author": "cankuteskin@gmail.com",
     "manifest_version": 3,
     "web_accessible_resources": [
