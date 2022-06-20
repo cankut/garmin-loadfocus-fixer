@@ -16,9 +16,9 @@
     ],
     "content_scripts": [
         {
-            "run_at": "document_end",
+            "run_at": "document_start",
             "matches": [
-                "https://connect.garmin.com/modern/report/-1/*"
+                "https://connect.garmin.com/modern/*"
             ],
             "js": [
                 "content.js"

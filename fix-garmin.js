@@ -1,5 +1,10 @@
+function fglog(m){
+	console.log(m);
+}
+
 function fixgarmin() {
 
+	fglog("executing fixgarmin script...");
 	var rawOpen = XMLHttpRequest.prototype.open;
 
 	XMLHttpRequest.prototype.open = function () {
@@ -15,9 +20,13 @@ function fixgarmin() {
 	}
 
 	function setupHook(xhr) {
+
+		fglog("setting up hook...");
+
 		function getter() {
 
 			delete xhr.responseText;
+			fglog("replacing text...");
 			var ret = xhr.responseText.replace('"trainingLoadBalanceCapable":false', '"trainingLoadBalanceCapable":true');
 			setup();
 			return ret;
